@@ -1,0 +1,201 @@
+body {
+    background-image:url(../IMG/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+ }
+ 
+ .header {
+    position: fixed;
+    top: 0;
+ }
+ 
+ .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+ 
+/* Default style for desktop */
+.content2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: inherit;
+    padding: 2%;
+    background-color: white;
+    margin: 2%;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Mobile adjustments */
+@media (max-width: 450px) {
+    .content2 {
+        display:initial;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: inherit;
+        padding: 2%;
+        background-color: white;
+        margin: 2%;
+        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+ .image {
+    width: 90%;
+    height: 90%;
+    border: 5px solid #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante distribuição vertical */
+ }
+ 
+ .footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 1vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.text-nav{
+    font-size: 120%;
+    font-family: "Special Elite", system-ui;
+    color: black;
+}
+
+.text-nav:hover{
+    color:gray;
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+    background-color: white;
+    margin-top: auto; /* Espaço flexível acima */
+    margin-bottom: auto;
+    
+}
+
+
+.special-elite-regular {
+    font-family: "Special Elite", serif;
+    font-size: 1.5vw; /* Adjusts with viewport width */
+    line-height: 1.5;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.texto-caixa {
+    padding: 1rem;
+    margin: auto;
+}
+
+.texto-caixa2 {
+    padding: 1rem;
+    margin-right: 15%;
+    text-align: left;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .special-elite-regular {
+        font-size: 4vw; /* Larger font for small screens */
+    }
+}
+
+/* Default style for desktop */
+.logo {
+    display: inline-block;
+    animation: slow-rotate 20s linear infinite;
+    transition: transform 0.6s ease;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .logo {
+        width: 90%;
+        height: auto;
+        margin-top:15%;
+    }
+}
+
+
+/* Infinite slow rotation */
+@keyframes slow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-inner {
+    width: 100%; /* Ensure carousel adapts to the parent container width */
+    max-width: 1300px; /* Set a max width for the entire carousel, adjust as needed */
+    height: 490px; /* Set a fixed height */
+    overflow: hidden;
+}
+  
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the space without distortion */
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0; /* Espaço acima e abaixo */
+}
+
+.carousel-header {
+    font-size: 3rem; /* Tamanho ajustável do texto */
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: 20px; /* Espaço entre o texto e o carrossel */
+    color: black; /* Cor do texto */
+    font-family: "Special Elite", system-ui;
+}
+
+.carousel{
+    border-color: white;
+    border: 5px solid #fff;
+}
+
